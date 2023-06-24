@@ -1,0 +1,30 @@
+#transparentFooter {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Saydam arka plan */
+}
+
+#transparentFooter.visible {
+  transform: translateY(0%);
+}
+
+.footerText {
+  text-align: center;
+  font-size: 16px;
+  color: #000000; /* Yazı rengi siyah */
+  font-weight: bold; /* Kalın yazı */
+  margin: 0;
+  padding: 15px;
+}
+
+.footerText a {
+  color: #000080; /* Link rengi mavi */
+  text-decoration: none;
+}
+
+.footerText a:hover {
+  text-decoration: underline;
+}

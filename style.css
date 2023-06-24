@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  position: relative;
+  width: 650px;
+  height: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-again-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-again-button.animate {
+  animation: buttonAnimation 1s;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    background-color: #f00;
+  }
+  100% {
+    background-color: #333;
+  }
+}
+
+
+@keyframes changing-color {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: yellow; }
+  100% { color: orange; }
+}
+
+
+#play-again {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#play-again:hover {
+  background-color: #555;
+}
+
+#score {
+  font-size: 18px;
+  color: #555;
+}
